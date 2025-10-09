@@ -3,9 +3,15 @@ import React from "react";
 const Navbar = () => {
   const links = (
     <>
-      <li className="m-2">Home</li>
-      <li className="m-2">Apps</li>
-      <li className="m-2">Installation</li>
+      <li className="m-2">
+        <a href="">Home</a>
+      </li>
+      <li className="m-2">
+        <a href="">Apps</a>
+      </li>
+      <li className="m-2">
+        <a href="">Installation</a>
+      </li>
     </>
   );
   return (

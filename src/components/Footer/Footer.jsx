@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#0b0b0b] text-gray-300 p-10">
-      <div className="footer sm:footer-horizontal flex flex-col md:flex-row justify-between gap-6 border-b border-gray-700 pb-6">
+      <div className="footer sm:footer-horizontal flex flex-col md:flex-row justify-between gap-3 border-b border-gray-700 pb-6">
         <aside className="flex flex-col items-center text-center">
           <img
             src="images/logo.png"
@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="text-sm leading-relaxed">
             <span className="font-semibold text-white text-lg">Hero.io</span>
             <br />
-            Empowering digital experiences with reliable solutions since 1992.
+            Empowering digital experiences with reliable solutions since 2015.
           </p>
         </aside>
 
@@ -48,8 +48,10 @@ const Footer = () => {
         </nav>
 
         <nav className="text-sm">
-          <h6 className="footer-title text-white text-base mb-2">Social</h6>
-          <div className="grid grid-flow-col gap-3">
+          <h6 className="footer-title text-white text-base my-2 md:mx-14">
+            Social
+          </h6>
+          <div className="flex gap-3 md:mx-12 justify-start md:justify-start pl-2">
             <a aria-label="Twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +119,7 @@ const Footer = () => {
       <div className="footer footer-center mt-4 pt-3 border-t border-gray-700">
         <aside>
           <p className="text-xs text-gray-400">
-            Copyright © {new Date().getFullYear()} — All rights reserved by{" "}
+            Copyright © {currentYear} — All rights reserved by{" "}
             <span className="text-white font-semibold">Hero.io</span>
           </p>
         </aside>
