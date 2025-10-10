@@ -55,7 +55,10 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-blue-400">
+        <a
+          className="btn btn-ghost text-blue-400"
+          onClick={() => navigate("/")}
+        >
           <img src="images/logo.png" alt="" className="w-12 h-12" />
           HERO.IO
         </a>

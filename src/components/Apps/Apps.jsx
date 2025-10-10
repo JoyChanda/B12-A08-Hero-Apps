@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import App1 from "../App1.jsx/App1";
+import { useNavigate } from "react-router";
 
 const Apps = ({ data }) => {
+  const navigate = useNavigate();
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
@@ -20,7 +22,10 @@ const Apps = ({ data }) => {
       </Suspense>
 
       <div className="text-center mt-12 mb-6">
-        <button className="px-8 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-xl hover:bg-purple-700 transition duration-200 transform hover:scale-105">
+        <button
+          className="px-8 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-xl hover:bg-purple-700 transition duration-200 transform hover:scale-105"
+          onClick={() => navigate("/apps")}
+        >
           Show All
         </button>
       </div>

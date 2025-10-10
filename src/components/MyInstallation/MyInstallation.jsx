@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 
 const MyInstallation = () => {
   const [installedApps, setInstalledApps] = useState([]);
-
+  const [sortOption, setSortOption] = useState("none");
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("installedApps")) || [];
     setInstalledApps(stored);
@@ -18,12 +18,23 @@ const MyInstallation = () => {
     toast.success(`${title} uninstalled successfully 🗑️`);
   };
 
+  const handleSortChange = (e) => {
+    const option = e.target.value;
+    setSortOption(option);
+
+    let sortedApps = [...installedApps];
+    if (option === "downloads-low-high") {
+      sortedApps.sort((a, b) => a.downloads - b.downloads);
+    } else if (option === "downloads-high-low") {
+      sortedApps.sort((a, b) => b.downloads - a.downloads);
+    }
+    setInstalledApps(sortedApps);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* ✅ Navbar */}
       <Navbar />
 
-      {/* ✅ Main Content */}
       <main className="flex-grow p-6 max-w-5xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
           Your Installed Apps
@@ -37,10 +48,14 @@ const MyInstallation = () => {
             {installedApps.length} App{installedApps.length !== 1 && "s"} Found
           </p>
 
-          <select className="border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <option>Sort By Size</option>
-            <option>Sort By Name</option>
-            <option>Sort By Rating</option>
+          <select
+            value={sortOption}
+            onChange={handleSortChange}
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          >
+            <option value="none">Sort By Downloads</option>
+            <option value="downloads-low-high">Low to High</option>
+            <option value="downloads-high-low">High to Low</option>
           </select>
         </div>
 
@@ -66,7 +81,7 @@ const MyInstallation = () => {
                     <p className="flex items-center gap-1 text-orange-500">
                       ⭐ {app.ratingAvg}
                     </p>
-                    <p>{app.size || "256 MB"}</p>
+                    <p>{app.size || "256 MB"} MB</p>
                   </div>
                 </div>
               </div>
@@ -87,8 +102,6 @@ const MyInstallation = () => {
           )}
         </div>
       </main>
-
-      {/* ✅ Footer */}
       <Footer />
     </div>
   );
