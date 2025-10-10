@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const App1 = ({ singleApp }) => {
-  const { image, title, companyName, ratingAvg, downloads } = singleApp;
+  const navigate = useNavigate();
+  const { id, image, title, companyName, ratingAvg, downloads } = singleApp;
 
   return (
-    <div className="bg-white shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full">
+    <div
+      onClick={() => navigate(`/app/${id}`)}
+      className="bg-white shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full cursor-pointer hover:shadow-lg"
+    >
       <div className="aspect-[4/3] rounded-t-2xl overflow-hidden p-3">
         <img
           src={image}

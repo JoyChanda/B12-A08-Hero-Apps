@@ -6,7 +6,6 @@ import Home from "../pages/Home/Home";
 import AppsList from "../components/Appdashboard/Appdashboard";
 import AppDetails from "../components/Appdashboard/AppDetails";
 import MyInstallation from "../components/MyInstallation/MyInstallation";
-import AppError from "../pages/ErrorPage/ErrorApp";
 
 export const router = createBrowserRouter([
   {
@@ -34,7 +33,7 @@ export const router = createBrowserRouter([
           return app;
         },
         Component: AppDetails,
-        errorElement: <AppError />,
+        errorElement: <ErrorPage type="app" />,
       },
     ],
   },

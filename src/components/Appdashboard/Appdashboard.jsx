@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 const AppsList = () => {
   const [apps, setApps] = useState([]);
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,10 +19,19 @@ const AppsList = () => {
     app.title.toLowerCase().includes(search.toLowerCase())
   );
 
+  const handleCardClick = (id) => {
+    setLoading(true);
+    setTimeout(() => {
+      navigate(`/app/${id}`);
+      setLoading(false);
+    }, 200);
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800">
+    <div className="min-h-screen bg-gray-100 text-gray-800 relative">
+      {loading && <Loader />}
+
       <div className="max-w-6xl mx-auto p-6">
-        {/* Header */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
           <h1 className="text-3xl font-bold">App Explorer</h1>
           <input
@@ -32,12 +43,10 @@ const AppsList = () => {
           />
         </div>
 
-        {/* App count */}
         <p className="text-gray-600 mb-4">
           Showing {filteredApps.length} of {apps.length} apps
         </p>
 
-        {/* No results */}
         {filteredApps.length === 0 ? (
           <p className="text-center text-gray-500 mt-20 text-lg">
             ❌ No App Found
@@ -47,7 +56,7 @@ const AppsList = () => {
             {filteredApps.map((app) => (
               <div
                 key={app.id}
-                onClick={() => navigate(`/app/${app.id}`)}
+                onClick={() => handleCardClick(app.id)}
                 className="bg-white rounded-2xl shadow-md p-4 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-transform"
               >
                 <img
@@ -61,8 +70,44 @@ const AppsList = () => {
                   {app.description}
                 </p>
                 <div className="flex items-center justify-between mt-3 text-sm">
-                  <span>⭐ {app.ratingAvg}</span>
-                  <span>{app.reviews} reviews</span>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-green-100 text-green-700 text-base font-semibold shadow-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-download"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                    <span className="whitespace-nowrap">
+                      {(app.downloads / 1000000).toFixed(1)}M
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-orange-100 text-orange-600 text-base font-semibold shadow-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-star fill-current"
+                    >
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <span>{app.ratingAvg}</span>
+                  </div>
                 </div>
               </div>
             ))}

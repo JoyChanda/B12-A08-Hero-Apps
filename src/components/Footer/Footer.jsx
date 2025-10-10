@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer sm:footer-horizontal flex flex-col md:flex-row justify-between gap-3 border-b border-gray-700 pb-6">
         <aside className="flex flex-col items-center text-center">
           <img
-            src="images/logo.png"
+            src="/public/images/logo.png"
             alt="Hero.io Logo"
             className="w-16 h-16 mb-3"
           />
