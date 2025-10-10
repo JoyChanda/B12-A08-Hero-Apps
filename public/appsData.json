@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766",
+    "title": "TaskFlow",
+    "companyName": "BrightTech Ltd.",
+    "id": 1,
+    "description": "A productivity app that helps teams manage tasks efficiently and collaborate in real time.",
+    "size": 45,
+    "reviews": 1280,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1",
+    "title": "FitTrack",
+    "companyName": "HealthSync",
+    "id": 2,
+    "description": "Track your workouts, monitor progress, and achieve your fitness goals with AI-based insights.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.2,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+    "title": "CryptoGuard",
+    "companyName": "CoinSecure",
+    "id": 3,
+    "description": "Manage and monitor cryptocurrency portfolios securely with real-time analytics.",
+    "size": 130,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 1250 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+    "title": "PhotoEase",
+    "companyName": "PixelWorks",
+    "id": 4,
+    "description": "Edit photos effortlessly with one-tap filters, background removal, and smart enhancements.",
+    "size": 120,
+    "reviews": 510,
+    "ratingAvg": 3.9,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 130 },
+      { "name": "5 star", "count": 80 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc",
+    "title": "Moodify",
+    "companyName": "WellBe Co.",
+    "id": 34,
+    "description": "Track your mood and receive mindfulness tips to improve mental health daily.",
+    "size": 55,
+    "reviews": 980,
+    "ratingAvg": 4.4,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957",
+    "title": "SafeWallet",
+    "companyName": "FinGuard",
+    "id": 6,
+    "description": "A secure digital wallet for managing finances, tracking expenses, and online payments.",
+    "size": 50,
+    "reviews": 1640,
+    "ratingAvg": 4.6,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c",
+    "title": "WeatherPro",
+    "companyName": "SkyNet Solutions",
+    "id": 7,
+    "description": "Accurate weather forecasts, radar maps, and alerts for severe weather conditions.",
+    "size": 40,
+    "reviews": 890,
+    "ratingAvg": 4.1,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 220 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "title": "TripMate",
+    "companyName": "ExploreMore",
+    "id": 8,
+    "description": "Plan trips, discover attractions, and book hotels with personalized travel recommendations.",
+    "size": 95,
+    "reviews": 1570,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 440 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "Chatly",
+    "companyName": "TalkNet Inc.",
+    "id": 9,
+    "description": "Instant messaging app with encrypted chats, group calls, and media sharing.",
+    "size": 55,
+    "reviews": 1980,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810431",
+    "title": "Musicly",
+    "companyName": "HarmonySoft",
+    "id": 10,
+    "description": "Stream and download your favorite songs with personalized playlists and offline mode.",
+    "size": 100,
+    "reviews": 2780,
+    "ratingAvg": 4.8,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1820 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1550565118-3a14e0d6d4c0",
+    "title": "FoodieGo",
+    "companyName": "EatSmart",
+    "id": 11,
+    "description": "Discover nearby restaurants, order food, and get exclusive deals with live tracking.",
+    "size": 80,
+    "reviews": 1420,
+    "ratingAvg": 4.3,
+    "downloads": 670000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 380 },
+      { "name": "5 star", "count": 700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1590608897129-79da98d15910",
+    "title": "BookNest",
+    "companyName": "Readify",
+    "id": 12,
+    "description": "Read, share, and review your favorite books with a global community of readers.",
+    "size": 75,
+    "reviews": 1100,
+    "ratingAvg": 4.6,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 570 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581092795360-6a6a4b54c9a0",
+    "title": "CodeBase",
+    "companyName": "DevSync Labs",
+    "id": 13,
+    "description": "Collaborate on code projects, track versions, and get real-time syntax feedback.",
+    "size": 115,
+    "reviews": 890,
+    "ratingAvg": 4.4,
+    "downloads": 440000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 290 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "TeamBoard",
+    "companyName": "CollabX",
+    "id": 14,
+    "description": "Visual project management tool for agile teams with kanban boards and reports.",
+    "size": 95,
+    "reviews": 1650,
+    "ratingAvg": 4.5,
+    "downloads": 820000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 810 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1580910051074-0c4c84b29d2c",
+    "title": "MindEase",
+    "companyName": "CalmTech",
+    "id": 15,
+    "description": "Meditation and stress relief app with guided sessions, sounds, and breathing exercises.",
+    "size": 65,
+    "reviews": 1890,
+    "ratingAvg": 4.7,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1240 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+    "title": "DocuShare",
+    "companyName": "CloudDocs",
+    "id": 16,
+    "description": "Upload, share, and manage your documents securely with cloud synchronization.",
+    "size": 90,
+    "reviews": 1230,
+    "ratingAvg": 4.3,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 570 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+    "title": "StreamBox",
+    "companyName": "PlayWave Media",
+    "id": 17,
+    "description": "Stream your favorite movies and shows with HD quality and offline access.",
+    "size": 150,
+    "reviews": 2890,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 1920 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1523473827532-0f3430d4e1ce",
+    "title": "BudgetPro",
+    "companyName": "FinTrack Co.",
+    "id": 18,
+    "description": "Track income, manage expenses, and reach savings goals with personalized insights.",
+    "size": 55,
+    "reviews": 1320,
+    "ratingAvg": 4.4,
+    "downloads": 610000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1490647910901-b8449c470126",
+    "title": "RecipeBook",
+    "companyName": "Cookify",
+    "id": 19,
+    "description": "Explore thousands of recipes, add favorites, and create shopping lists automatically.",
+    "size": 70,
+    "reviews": 1420,
+    "ratingAvg": 4.5,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 680 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2",
+    "title": "Eventify",
+    "companyName": "PlanHub",
+    "id": 20,
+    "description": "Discover and organize local events, meetups, and conferences near you.",
+    "size": 85,
+    "reviews": 1110,
+    "ratingAvg": 4.2,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 440 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1584697964192-7ff961d6b1a3",
+    "title": "ShopSmart",
+    "companyName": "BuyRight Inc.",
+    "id": 21,
+    "description": "Online shopping app offering the best deals, discounts, and secure payments.",
+    "size": 90,
+    "reviews": 1980,
+    "ratingAvg": 4.6,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1070 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642532400-2682810df593",
+    "title": "TimeTrackr",
+    "companyName": "FocusSoft",
+    "id": 22,
+    "description": "Boost productivity by tracking time spent on tasks and analyzing performance trends.",
+    "size": 45,
+    "reviews": 750,
+    "ratingAvg": 4.1,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "LangLearner",
+    "companyName": "Polyglot Labs",
+    "id": 23,
+    "description": "Learn new languages through interactive lessons, games, and real conversation practice.",
+    "size": 70,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c",
+    "title": "GardenGuru",
+    "companyName": "GreenThumb Co.",
+    "id": 24,
+    "description": "Gardening assistant app with plant care schedules, disease solver, and gardening tips.",
+    "size": 55,
+    "reviews": 430,
+    "ratingAvg": 4.2,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "SleepSound",
+    "companyName": "CalmNite",
+    "id": 25,
+    "description": "Relax with ambient sounds and sleep stories to improve your sleep quality nightly.",
+    "size": 65,
+    "reviews": 1450,
+    "ratingAvg": 4.7,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1523473827532-0f3430d4e1ce",
+    "title": "ArtConnect",
+    "companyName": "CreativePulse",
+    "id": 26,
+    "description": "Showcase digital art, connect with artists, and sell or purchase artworks globally.",
+    "size": 85,
+    "reviews": 1120,
+    "ratingAvg": 4.3,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 560 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+    "title": "MindMap Pro",
+    "companyName": "BrainWave Studios",
+    "id": 27,
+    "description": "Build mind maps, brainstorm with teams, and visualize ideas dynamically.",
+    "size": 60,
+    "reviews": 810,
+    "ratingAvg": 4.5,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1515165562835-c8b610ef9f7b",
+    "title": "HealthHub",
+    "companyName": "WellnessWorks",
+    "id": 28,
+    "description": "All-in-one health tracker with diet, hydration, exercise, and sleep monitoring.",
+    "size": 110,
+    "reviews": 2200,
+    "ratingAvg": 4.8,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1390 }
+    ]
+  }
+]

@@ -17,7 +17,7 @@ const Banner = () => {
             "
           >
             Productive
-          </span>
+          </span>{" "}
           Apps
         </h1>
         <p className="max-w-2xl text-sm sm:text-base text-gray-600 mb-8">
