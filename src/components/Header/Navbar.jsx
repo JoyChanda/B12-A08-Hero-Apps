@@ -1,16 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const links = (
     <>
-      <li className="m-2">
-        <a href="">Home</a>
+      <li
+        className="m-2 cursor-pointer hover:text-purple-600 transition"
+        onClick={() => navigate("/")}
+      >
+        Home
       </li>
-      <li className="m-2">
-        <a href="">Apps</a>
+
+      <li
+        className="m-2 cursor-pointer hover:text-purple-600 transition"
+        onClick={() => navigate("/apps")}
+      >
+        Apps
       </li>
-      <li className="m-2">
-        <a href="">Installation</a>
+
+      <li
+        className="m-2 cursor-pointer hover:text-purple-600 transition"
+        onClick={() => navigate("/installation")}
+      >
+        Installation
       </li>
     </>
   );
