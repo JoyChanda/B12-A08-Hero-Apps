@@ -7,17 +7,15 @@ const Navbar = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
-  // Helper: check if current path matches
   const isActive = (path) => location.pathname === path;
 
-  // Handle navigation with loader
   const handleNavigation = (path) => {
-    if (location.pathname === path) return; // avoid reloading same page
-    setLoading(true); // show loader
+    if (location.pathname === path) return;
+    setLoading(true);
     setTimeout(() => {
-      navigate(path); // navigate after brief delay
-      setLoading(false); // hide loader (optional, pages can control loader too)
-    }, 300); // adjust delay for smoother UX
+      navigate(path);
+      setLoading(false);
+    }, 300);
   };
 
   const links = (
@@ -59,7 +57,6 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      {/* Loader Overlay */}
       {loading && <Loader />}
 
       <div className="navbar bg-base-100 shadow-sm relative z-10">
@@ -93,11 +90,7 @@ const Navbar = () => {
             className="btn md:btn-md lg:btn-lg xl:btn-xl btn-ghost text-blue-400"
             onClick={() => handleNavigation("/")}
           >
-            <img
-              src="/public/images/logo.png"
-              alt="Logo"
-              className="w-12 h-12"
-            />
+            <img src="/images/logo.png" alt="Logo" className="w-12 h-12" />
             HERO.IO
           </a>
         </div>
@@ -120,7 +113,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="/public/images/github.png"
+              src="/images/github.png"
               alt="GitHub Logo"
               className="w-6 h-6 filter invert brightness-0"
             />
