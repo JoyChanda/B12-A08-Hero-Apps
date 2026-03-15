@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useLoaderData, useNavigate } from "react-router";
 import Loader from "../Loader/Loader";
 
 const AppsList = () => {
-  const [apps, setApps] = useState([]);
+  const apps = useLoaderData();
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch("/appsData.json")
-      .then((res) => res.json())
-      .then((data) => setApps(data))
-      .catch((err) => console.error("Failed to fetch apps:", err));
-  }, []);
 
   const filteredApps = apps.filter((app) =>
     app.title.toLowerCase().includes(search.toLowerCase())
@@ -21,10 +14,8 @@ const AppsList = () => {
 
   const handleCardClick = (id) => {
     setLoading(true);
-    setTimeout(() => {
-      navigate(`/app/${id}`);
-      setLoading(false);
-    }, 200);
+    navigate(`/app/${id}`);
+    setLoading(false);
   };
 
   return (
@@ -57,11 +48,12 @@ const AppsList = () => {
               <div
                 key={app.id}
                 onClick={() => handleCardClick(app.id)}
-                className="bg-white rounded-2xl shadow-md p-4 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-transform"
+                className="bg-white rounded-2xl shadow-md p-4 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all duration-300 animate-fadeIn"
               >
                 <img
                   src={app.image}
                   alt={app.title}
+                  loading="lazy"
                   className="h-40 w-full object-cover rounded-xl mb-4"
                 />
                 <h2 className="text-xl font-semibold mb-1">{app.title}</h2>
